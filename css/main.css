@@ -70,11 +70,23 @@ body {
   border-bottom: 1px solid var(--third-title-color);
 }
 
+@media (min-width: 481px) {
+  .header {
+    width: 480px;
+  }
+}
+
 .header__container {
   display: flex;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+@media (min-width: 481px) {
+  .header__container {
+    width: 480px;
+  }
 }
 
 .header__nav {
@@ -103,6 +115,12 @@ body {
 .header__list {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 480px) {
+  .header__list {
+    display: none;
+  }
 }
 
 .header__item {
@@ -139,6 +157,12 @@ body {
   display: flex;
   margin-left: auto;
   align-items: center;
+}
+
+@media (max-width: 480px) {
+  .header__contacts {
+    display: none;
+  }
 }
 
 .header__mail {
@@ -620,8 +644,11 @@ body {
   padding: 60px 0 60px 0;
 }
 
-.footer .footer__contacts {
-  display: flex;
+@media (min-width: 481px) {
+  .footer .footer__contacts {
+    display: flex;
+    width: 480px;
+  }
 }
 
 .footer__logo {
@@ -758,11 +785,30 @@ body {
   padding-bottom: 94px;
 }
 
+@media (min-width: 481px) {
+  .projects {
+    width: 480px;
+  }
+}
+
 .projects__link {
-  display: flex;
   align-items: center;
   margin-left: 279px;
   margin-right: 279px;
+}
+
+@media (min-width: 481px) {
+  .projects__link {
+    display: flex;
+  }
+}
+
+@media (max-width: 481px) {
+  .projects__link {
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .projects-link__item {
@@ -791,6 +837,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 50px;
+  width: 370px;
 }
 
 .projects__item {
@@ -798,6 +845,14 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 480px) {
+  .projects__item {
+    width: 450px;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
 }
 
 .projects__item:hover {
@@ -838,6 +893,12 @@ body {
   border: 1px solid #eeeeee;
   border-top: none;
   padding-top: 20;
+}
+
+@media (max-width: 480px) {
+  .projects-item__name {
+    width: 450px;
+  }
 }
 
 .projects-name__tittle {

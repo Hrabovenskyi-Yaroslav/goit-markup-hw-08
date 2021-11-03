@@ -2,9 +2,13 @@
   background: var(--second-title-color);
   padding: 60px 0 60px 0;
   .footer__contacts {
-    display: flex;
+    @media (min-width: 481px) {
+      display: flex;
+      width: 480px;
+    }
   }
 }
+
 .footer__logo {
   font-weight: bold;
   font-size: 26px;
