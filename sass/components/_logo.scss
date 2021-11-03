@@ -1,0 +1,30 @@
+.header__logo {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--fourth-text-color);
+  margin-left: 0px;
+  margin-right: 95px;
+}
+.header__spanlogo {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--prymary-text-color);
+}
+.footer__logo {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--fourth-text-color);
+  margin-left: 0px;
+  margin-right: 95px;
+  margin-bottom: 20px;
+  display: block;
+}
+.footer__spanlogo {
+  color: var(--third-text-color);
+}

@@ -1,0 +1,118 @@
+.footer {
+  background: var(--second-title-color);
+  padding: 60px 0 60px 0;
+  .footer__contacts {
+    display: flex;
+  }
+}
+.footer__logo {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--fourth-text-color);
+  margin-left: 0px;
+  margin-right: 95px;
+  margin-bottom: 20px;
+  display: block;
+}
+.footer__spanlogo {
+  color: var(--third-text-color);
+}
+.footer__link {
+  font-weight: normal;
+  margin-top: 9px;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer__link:hover {
+  color: var(--third-text-color);
+}
+.footer__social {
+  margin-left: 70px;
+  margin-top: 0px;
+}
+.footer-social__tittle {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer-social__list {
+  display: flex;
+}
+.footer-social__item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+.footer-social__link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-social__link:focus,
+.footer-social__link:hover {
+  background: var(--fourth-text-color);
+}
+.footer-social__icon {
+  fill: var(--primary-title-color);
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer__subscribe {
+  margin-left: 93px;
+}
+.footer-subscribe__tittle {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer-subscribe__input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid #ffffff4d;
+  border-radius: 4px;
+  background: var(--second-title-color);
+  padding: 16px;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  color: #ffffff99;
+}
+.footer-subscribe__btn {
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  border-radius: 4px;
+  background-color: var(--fourth-text-color);
+  box-shadow: 0px 4px 4px 0px #00000026;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  position: relative;
+}
+.footer-btn__icon::after {
+  content: url("../images/send.svg");
+  margin-left: 10px;
+  position: absolute;
+  margin-right: 28px;
+}
+.footer-btn__icon {
+  margin-left: -28px;
+}
