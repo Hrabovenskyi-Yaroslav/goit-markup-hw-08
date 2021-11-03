@@ -17,9 +17,12 @@
     }
   }
 }
-
+.hero {
+  @media (max-width: 480px) {
+    padding-right: 50px;
+  }
+}
 .hero__tittle {
-  font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -29,6 +32,14 @@
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
+  @media (max-width: 480px) {
+    width: 480px;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 42px;
+    letter-spacing: 0.06em;
+  }
 }
 .hero__btn {
   background-color: var(--fourth-text-color);
