@@ -1,14 +1,15 @@
 .footer {
   background: var(--second-title-color);
   padding: 60px 0 60px 0;
-  @media screen and (max-width: 768px) {
-    .footer-subscribe__btn {
-      margin-left: 120px;
-      margin-top: 20px;
+  .footer__contacts {
+    //display: flex;
+    @media screen and (max-width: 768px) {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
   }
 }
-
 .footer__logo {
   font-weight: bold;
   font-size: 26px;
@@ -17,31 +18,20 @@
   color: var(--fourth-text-color);
   //margin-left: 0px;
   //margin-right: 95px;
-  //margin-bottom: 20px;
+  margin-bottom: 20px;
   display: block;
   @media screen and (max-width: 768px) {
     text-align: center;
-    width: 100%;
-  }
-  @media screen and (min-width: 768px) {
-    text-align: start;
-    padding-left: 115px;
+    padding-left: 95px;
   }
 }
 .footer__spanlogo {
   color: var(--third-text-color);
 }
-.footer-contacts__list {
+.footer__contacts {
   @media screen and (max-width: 768px) {
     text-align: center;
-  }
-  @media screen and (min-width: 768px) {
-    text-align: center;
-    margin-left: 0;
-    position: absolute;
-    left: 0;
-    margin-top: -10px;
-    margin-left: 76px;
+    justify-content: center;
   }
 }
 .footer__link {
@@ -55,26 +45,14 @@
 .footer__link:hover {
   color: var(--third-text-color);
 }
-.footer__contacts {
-  position: relative;
-}
 .footer__social {
   //margin-left: 70px;
-  margin-top: 0px;
-
+  //margin-top: 0px;
   @media screen and (max-width: 768px) {
     text-align: center;
+    justify-content: center;
     margin-top: 60px;
-  }
-  @media screen and (min-width: 768px) {
-    text-align: center;
-    width: 206px;
-    height: 80px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: -40px;
-    margin-right: 89px;
+    margin-bottom: 60px;
   }
 }
 .footer-social__tittle {
@@ -88,9 +66,7 @@
 .footer-social__list {
   display: flex;
   @media screen and (max-width: 768px) {
-    justify-content: center;
-  }
-  @media screen and (min-width: 768px) {
+    text-align: center;
     justify-content: center;
   }
 }
@@ -119,16 +95,9 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.footer__subscribe {
-  //margin-left: 93px;
-  @media screen and (max-width: 768px) {
-    justify-content: center;
-  }
-  @media screen and (min-width: 768px) {
-    position: relative;
-    padding-top: 50px;
-  }
-}
+/*.footer__subscribe {
+  margin-left: 93px;
+}*/
 .footer-subscribe__tittle {
   font-weight: bold;
   font-size: 14px;
@@ -136,21 +105,6 @@
   letter-spacing: 0.03em;
   color: #ffffff;
   margin-bottom: 20px;
-  @media screen and (max-width: 768px) {
-    text-align: center;
-    margin-top: 60px;
-  }
-  @media screen and (min-width: 768px) {
-    text-align: center;
-    margin-top: 60px;
-  }
-}
-.footer-subscribe__div {
-  @media screen and (min-width: 768px) {
-    padding-left: 145px;
-    padding-right: 145px;
-    position: relative;
-  }
 }
 .footer-subscribe__input {
   width: 358px;
@@ -163,11 +117,7 @@
   color: #ffffff99;
   @media screen and (max-width: 768px) {
     width: 100%;
-  }
-  @media screen and (min-width: 768px) {
-    width: 450px;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 20px;
   }
 }
 .footer-subscribe__btn {
@@ -185,18 +135,6 @@
   line-height: 30px;
   letter-spacing: 0.06em;
   position: relative;
-  @media screen and (max-width: 768px) {
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-  @media screen and (min-width: 768px) {
-    margin-top: 20px;
-    position: absolute;
-    left: 25%;
-    align-items: center;
-    justify-content: center;
-  }
 }
 .footer-btn__icon::after {
   content: url("../images/send.svg");
