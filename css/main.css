@@ -636,6 +636,13 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    text-align: start;
+    padding-left: 115px;
+  }
+}
+
 .footer__spanlogo {
   color: var(--third-text-color);
 }
@@ -643,6 +650,17 @@ body {
 @media screen and (max-width: 768px) {
   .footer-contacts__list {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-contacts__list {
+    text-align: center;
+    margin-left: 0;
+    position: absolute;
+    left: 0;
+    margin-top: -10px;
+    margin-left: 76px;
   }
 }
 
@@ -659,9 +677,10 @@ body {
   color: var(--third-text-color);
 }
 
-/*.footer__contacts {
+.footer__contacts {
   position: relative;
-}*/
+}
+
 .footer__social {
   margin-top: 0px;
 }
@@ -678,11 +697,11 @@ body {
     text-align: center;
     width: 206px;
     height: 80px;
-    /*.footer__social {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -40px;
+    margin-right: 89px;
   }
 }
 
@@ -700,6 +719,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .footer-social__list {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .footer-social__list {
     justify-content: center;
   }
@@ -740,6 +765,13 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer__subscribe {
+    position: relative;
+    padding-top: 50px;
+  }
+}
+
 .footer-subscribe__tittle {
   font-weight: bold;
   font-size: 14px;
@@ -760,6 +792,14 @@ body {
   .footer-subscribe__tittle {
     text-align: center;
     margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-subscribe__div {
+    padding-left: 145px;
+    padding-right: 145px;
+    position: relative;
   }
 }
 
@@ -785,9 +825,6 @@ body {
     width: 450px;
     justify-content: center;
     align-items: center;
-    margin-left: 150px;
-    margin-right: 70px;
-    margin-bottom: 10px;
   }
 }
 
@@ -818,8 +855,11 @@ body {
 
 @media screen and (min-width: 768px) {
   .footer-subscribe__btn {
-    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    left: 25%;
     align-items: center;
+    justify-content: center;
   }
 }
 

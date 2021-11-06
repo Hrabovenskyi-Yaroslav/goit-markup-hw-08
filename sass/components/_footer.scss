@@ -23,6 +23,10 @@
     text-align: center;
     width: 100%;
   }
+  @media screen and (min-width: 768px) {
+    text-align: start;
+    padding-left: 115px;
+  }
 }
 .footer__spanlogo {
   color: var(--third-text-color);
@@ -30,6 +34,14 @@
 .footer-contacts__list {
   @media screen and (max-width: 768px) {
     text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: center;
+    margin-left: 0;
+    position: absolute;
+    left: 0;
+    margin-top: -10px;
+    margin-left: 76px;
   }
 }
 .footer__link {
@@ -43,12 +55,13 @@
 .footer__link:hover {
   color: var(--third-text-color);
 }
-/*.footer__contacts {
+.footer__contacts {
   position: relative;
-}*/
+}
 .footer__social {
   //margin-left: 70px;
   margin-top: 0px;
+
   @media screen and (max-width: 768px) {
     text-align: center;
     margin-top: 60px;
@@ -57,11 +70,11 @@
     text-align: center;
     width: 206px;
     height: 80px;
-    /*.footer__social {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -40px;
+    margin-right: 89px;
   }
 }
 .footer-social__tittle {
@@ -75,6 +88,9 @@
 .footer-social__list {
   display: flex;
   @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) {
     justify-content: center;
   }
 }
@@ -108,6 +124,10 @@
   @media screen and (max-width: 768px) {
     justify-content: center;
   }
+  @media screen and (min-width: 768px) {
+    position: relative;
+    padding-top: 50px;
+  }
 }
 .footer-subscribe__tittle {
   font-weight: bold;
@@ -123,6 +143,13 @@
   @media screen and (min-width: 768px) {
     text-align: center;
     margin-top: 60px;
+  }
+}
+.footer-subscribe__div {
+  @media screen and (min-width: 768px) {
+    padding-left: 145px;
+    padding-right: 145px;
+    position: relative;
   }
 }
 .footer-subscribe__input {
@@ -141,9 +168,6 @@
     width: 450px;
     justify-content: center;
     align-items: center;
-    margin-left: 150px;
-    margin-right: 70px;
-    margin-bottom: 10px;
   }
 }
 .footer-subscribe__btn {
@@ -167,8 +191,11 @@
     align-items: center;
   }
   @media screen and (min-width: 768px) {
-    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    left: 25%;
     align-items: center;
+    justify-content: center;
   }
 }
 .footer-btn__icon::after {
