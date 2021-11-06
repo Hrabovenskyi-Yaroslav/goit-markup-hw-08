@@ -31,9 +31,9 @@
 .header__list {
   display: flex;
   align-items: center;
-  /*@media (max-width: 480px) {
+  @media (max-width: 767px) {
     display: none;
-  }*/
+  }
 }
 .header__item {
   margin-right: 50px;
@@ -60,16 +60,23 @@
   border-radius: 2px;
   background-color: var(--fourth-text-color);
   display: block;
-  bottom: -41px;
+  @media screen and (min-width: 768px) {
+    bottom: -42px;
+  }
+  @media screen and (min-width: 1200px) {
+    bottom: -39px;
+  }
 }
 
 .header__contacts {
-  display: flex;
   margin-left: auto;
   align-items: center;
-  /*@media (max-width: 480px) {
+  @media (max-width: 767px) {
     display: none;
-  }*/
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .header__mail {
   font-weight: 500;
@@ -90,7 +97,9 @@
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--second-text-color);
-  margin-left: 52px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 52px;
+  }
 }
 .header__tel:hover,
 .header__tel:focus {
