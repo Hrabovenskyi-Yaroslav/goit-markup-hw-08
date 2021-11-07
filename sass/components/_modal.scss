@@ -26,6 +26,9 @@
   transform: scale(1);
   transition: transform 300ms ease;
   padding: 40px;
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
 }
 .modal__tittle {
   color: var(--prymary-text-color);
@@ -36,6 +39,7 @@
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 12px;
+  width: 100%;
 }
 .modal__data {
   display: block;
@@ -60,6 +64,9 @@
   display: inline-block;
   padding-left: 42px;
   outline: none;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 }
 .modal__input:hover,
 .modal__input:focus {
@@ -92,6 +99,9 @@
   font-weight: 400;
   margin-bottom: 28px;
   margin-top: 4px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 }
 .modal__checkbox:checked + .modal-checkbox__label span {
   background-color: var(--fourth-text-color);
@@ -103,6 +113,12 @@
   font-weight: 400;
   color: var(--second-text-color);
   display: flex;
+  @media screen and (max-width: 767px) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 .modal-checkbox__label span {
   width: 16px;
@@ -121,6 +137,12 @@
 .modal-checkbox__link {
   color: var(--fourth-text-color);
   margin-left: 7px;
+  @media screen and (max-width: 767px) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 .modal__btn {
   background-color: var(--fourth-text-color);
