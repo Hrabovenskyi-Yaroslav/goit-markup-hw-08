@@ -22,10 +22,10 @@
                 <a href="" class="header__logo link">Web<span class="header__spanlogo">Studio</span></a>
                 <ul class="header__list list">
                     <li class="header__item">
-                        <a class="header__link link" href="./index.html">Студия</a>
+                        <a class="header__link link header__current" href="./index.html">Студия</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__link link header__current" href="./portfolio.html">Портфолио</a>
+                        <a class="header__link link" href="./portfolio.html">Портфолио</a>
                     </li>
                     <li class="header__item">
                         <a class="header__link link" href="">Контакты</a>
@@ -48,6 +48,64 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+            <button class="menu-open-btn">
+                <svg class="menu-open-btn__icon" width="40" height="40">
+                    <use href="./images/sprite.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="backdrop is-hidden">
+            <div class="mob-menu">
+                <div class="mob-menu__content">
+    
+                    <ul class="mob-menu__list list">
+                        <li class="mob-menu__item">
+                            <a class="mob-menu__link link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="mob-menu__item">
+                            <a class="mob-menu__link link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="mob-menu__item">
+                            <a class="mob-menu__link link" href="">Контакты</a>
+                        </li>
+                    </ul>
+    
+                    <ul class="mob-menu__contacts list">
+                        <li class="mob-contacts__item">
+                            <a class="mob-menu__tel link" href="+380961111111">
+                                +38 096 111 11 11</a>
+                        </li>
+                        <li>
+                            <a class="mob-menu__mail link" href="mailto:info@devstudio.com">
+                                info@devstudio.com</a>
+                        </li>
+                    </ul>
+    
+                    <ul class="mob-menu__social list">
+                        <li class="mob-social__item">
+                            <a class="mob-social__link link" href="">Instagram</a>
+                            <span></span>
+                        </li>
+                        <li class="mob-social__item">
+                            <a class="mob-social__link link" href="">Twitter</a>
+                            <span></span>
+                        </li>
+                        <li class="mob-social__item">
+                            <a class="mob-social__link link" href="">Facebook</a>
+                            <span></span>
+                        </li>
+                        <li class="mob-social__item">
+                            <a class="mob-social__link link" href="">Linkedin</a>
+                        </li>
+                    </ul>
+    
+                </div>
+                <button class="menu-close-btn">
+                    <svg width="40" height="40">
+                        <use href="./images/sprite.svg#icon-close_40px"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -74,7 +132,11 @@
         <ul class="projects__list list">
             <li class="projects__item">
                 <div class="projects-item__hover">
-                    <img src="./images/work1.jpg" width="370" alt="work1">
+                    <picture>
+                        <source srcset="./images/desc/projects1-desc-1x.jpg 1x, ./images/desc/projects1-desc-2x.jpg 2x" media="(min-widht=1200px)">
+                        <source srcset="./images/tab/projects1-tab-1x.jpg 1x, ./images/tab/projects1-tab-1x 2x" media="(min-widht=768px)">
+                        <img src="./images/desc/projects1-desc-1x.jpg" width="370" alt="work1">
+                    </picture>
                     <p class="projects-hover__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
@@ -83,9 +145,14 @@
                     <p class="projects-name__text">Веб-сайт</p>
                 </div>  
             </li>
+
             <li class="projects__item">
                 <div class="projects-item__hover">
-                    <img src="./images/work2.jpg" width="370" alt="work2">
+                    <picture>
+                        <source srcset="./images/desc/projects2-desc-1x.jpg 1x, ./images/desc/projects2-desc-2x.jpg 2x" media="(min-widht=1200px)">
+                        <source srcset="./images/tab/projects2-tab-1x.jpg 1x, ./images/tab/projects2-tab-1x 2x" media="(min-widht=768px)">
+                        <img src="./images/desc/projects2-desc-1x.jpg" width="370" alt="work2">
+                    </picture>
                     <p class="projects-hover__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                         платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -95,9 +162,14 @@
                     <p class="projects-name__text">Дизайн</p>
                 </div>
             </li>
+
             <li class="projects__item">
                 <div class="projects-item__hover">
-                    <img src="./images/work3.jpg" width="370" alt="work3">
+                    <picture>
+                        <source srcset="./images/desc/projects3-desc-1x.jpg 1x, ./images/desc/projects3-desc-2x.jpg 2x" media="(min-widht=1200px)">
+                        <source srcset="./images/tab/projects3-tab-1x.jpg 1x, ./images/tab/projects3-tab-1x 2x" media="(min-widht=768px)">
+                        <img src="./images/desc/projects3-desc-1x.jpg" width="370" alt="work3">
+                    </picture>
                     <p class="projects-hover__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                         платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -107,9 +179,14 @@
                     <p class="projects-name__text">Приложение</p>
                 </div>
             </li>
+
             <li class="projects__item">
                 <div class="projects-item__hover">
-                    <img src="./images/work4.jpg" width="370" alt="work4">
+                    <picture>
+                        <source srcset="./images/desc/projects4-desc-1x.jpg 1x, ./images/desc/projects4-desc-2x.jpg 2x" media="(min-widht=1200px)">
+                        <source srcset="./images/tab/projects4-tab-1x.jpg 1x, ./images/tab/projects4-tab-1x 2x" media="(min-widht=768px)">
+                        <img src="./images/desc/projects4-desc-1x.jpg" width="370" alt="work4">
+                    </picture>
                     <p class="projects-hover__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                         платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -119,9 +196,14 @@
                     <p class="projects-name__text">Маркетинг</p>
                 </div>
             </li>
+
             <li class="projects__item">
                 <div class="projects-item__hover">
-                    <img src="./images/work5.jpg" width="370" alt="work5">
+                    <picture>
+                        <source srcset="./images/desc/projects5-desc-1x.jpg 1x, ./images/desc/projects5-desc-2x.jpg 2x" media="(min-widht=1200px)">
+                        <source srcset="./images/tab/projects5-tab-1x.jpg 1x, ./images/tab/projects5-tab-1x 2x" media="(min-widht=768px)">
+                        <img src="./images/desc/projects5-desc-1x.jpg" width="370" alt="work5">
+                    </picture>
                     <p class="projects-hover__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                         платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -131,9 +213,14 @@
                     <p class="projects-name__text">Приложение</p>
                 </div>
             </li>
+
             <li class="projects__item">
                 <div class="projects-item__hover">
-                    <img src="./images/work6.jpg" width="370" alt="work6">
+                    <picture>
+                        <source srcset="./images/desc/projects6-desc-1x.jpg 1x, ./images/desc/projects6-desc-2x.jpg 2x" media="(min-widht=1200px)">
+                        <source srcset="./images/tab/projects6-tab-1x.jpg 1x, ./images/tab/projects6-tab-1x 2x" media="(min-widht=768px)">
+                        <img src="./images/desc/projects6-desc-1x.jpg" width="370" alt="work6">
+                    </picture>
                     <p class="projects-hover__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                         платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -143,9 +230,14 @@
                     <p class="projects-name__text">Веб-сайт</p>
                 </div>
             </li>
+
             <li class="projects__item">
                 <div class="projects-item__hover">
-                    <img src="./images/work7.jpg" width="370" alt="work7">
+                    <picture>
+                        <source srcset="./images/desc/projects7-desc-1x.jpg 1x, ./images/desc/projects7-desc-2x.jpg 2x" media="(min-widht=1200px)">
+                        <source srcset="./images/tab/projects7-tab-1x.jpg 1x, ./images/tab/projects7-tab-1x 2x" media="(min-widht=768px)">
+                        <img src="./images/desc/projects7-desc-1x.jpg" width="370" alt="work7">
+                    </picture>
                     <p class="projects-hover__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                         платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -155,9 +247,14 @@
                     <p class="projects-name__text">Дизайн</p>
                 </div>
             </li>
+
             <li class="projects__item">
                 <div class="projects-item__hover">
-                    <img src="./images/work8.jpg" width="370" alt="work8">
+                    <picture>
+                        <source srcset="./images/desc/projects8-desc-1x.jpg 1x, ./images/desc/projects8-desc-2x.jpg 2x" media="(min-widht=1200px)">
+                        <source srcset="./images/tab/projects8-tab-1x.jpg 1x, ./images/tab/projects8-tab-1x 2x" media="(min-widht=768px)">
+                        <img src="./images/desc/projects8-desc-1x.jpg" width="370" alt="work8">
+                    </picture>
                     <p class="projects-hover__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                         платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -167,9 +264,14 @@
                     <p class="projects-name__text">Маркетинг</p>
                 </div>
             </li>
+
             <li class="projects__item">
                 <div class="projects-item__hover">
-                    <img src="./images/work9.jpg" width="370" alt="work9">
+                    <picture>
+                        <source srcset="./images/desc/projects9-desc-1x.jpg 1x, ./images/desc/projects9-desc-2x.jpg 2x" media="(min-widht=1200px)">
+                        <source srcset="./images/tab/projects9-tab-1x.jpg 1x, ./images/tab/projects9-tab-1x 2x" media="(min-widht=768px)">
+                        <img src="./images/desc/projects9-desc-1x.jpg" width="370" alt="work9">
+                    </picture>
                     <p class="projects-hover__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                         платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -252,6 +354,7 @@
     </footer>
 
         <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
 
 </body>
 </html>

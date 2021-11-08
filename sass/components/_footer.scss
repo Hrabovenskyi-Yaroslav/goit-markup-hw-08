@@ -2,7 +2,6 @@
   background: var(--second-title-color);
   padding: 60px 0 60px 0;
   .footer__contacts {
-    //display: flex;
     @media screen and (max-width: 768px) {
       align-items: center;
       justify-content: center;
@@ -19,8 +18,6 @@
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--fourth-text-color);
-  //margin-left: 0px;
-  //margin-right: 95px;
   margin-bottom: 20px;
   display: block;
   @media screen and (max-width: 768px) {
@@ -71,7 +68,6 @@
   margin-top: 9px;
   font-size: 14px;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer__link:hover {
